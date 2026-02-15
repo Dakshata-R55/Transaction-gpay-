@@ -4,6 +4,8 @@ public class AccountNumber {
     private int upi;
     private int balance;
 private String accNum;
+private TransactionHistory ts;
+
     public AccountNumber(String accNum,int bal,int upi)
     {
         this.accNum=accNum;
@@ -36,5 +38,13 @@ private String accNum;
 
     public void setAccNum(String accNum) {
         this.accNum = accNum;
+    }
+
+    public TransactionHistory getTs() {
+        return ts;
+    }
+
+    public void setTs(TransactionHistory ts) {
+        this.ts = ts;
     }
 }

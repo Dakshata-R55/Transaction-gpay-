@@ -5,7 +5,8 @@ public class User {
    private String userName;
    List<AccountNumber> accNum=new ArrayList<>();
 
-    public User(String userid,AccountNumber accNum,String name){
+    public User(String userid,AccountNumber accNum,String name)
+    {
 this.accNum.add(accNum);
         this.userPhn=userid;
         this.userName=name;

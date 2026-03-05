@@ -1,28 +1,28 @@
 package FinTransaction;
+import java.time.LocalDateTime;
 import java.util.*;
 public class TransactionHistory {
 private String forWhom;
-private int howMuch;
-    private String fromRec;
-    private int recamt;
-List<Integer>mny=new ArrayList<>();
-Map<String,List>map=new HashMap<>();
 
-public TransactionHistory(String forWhom,int howMuch)
+
+    private LocalDateTime datTim;
+    private int amountHow;
+    private String recOrSen;
+
+    //List<TransactionDate> mny=new ArrayList<>();
+public TransactionHistory(String forWhom,LocalDateTime ld,int hm,String recOrSen)
 {
+    this.forWhom=forWhom;
+    this.datTim=ld;
+    this.amountHow=hm;
+    this.recOrSen=recOrSen;
 
-    this.mny.add(howMuch);
-map.put(forWhom,mny);
+   // this.an.mny.add(td);
+//this.an.map.put(forWhom,mny);
 }
 
+public TransactionHistory(){}
 
-    public int getHowMuch() {
-        return howMuch;
-    }
-
-    public void setHowMuch(int howMuch) {
-        this.howMuch = howMuch;
-    }
 
     public String getForWhom() {
         return forWhom;
@@ -30,5 +30,20 @@ map.put(forWhom,mny);
 
     public void setForWhom(String forWhom) {
         this.forWhom = forWhom;
+    }
+
+
+
+
+    public LocalDateTime getDatTim() {
+        return datTim;
+    }
+
+    public int getAmountHow() {
+        return amountHow;
+    }
+
+    public String getRecOrSen() {
+        return recOrSen;
     }
 }

@@ -1,26 +1,32 @@
 package FinTransaction;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class AccountNumber {
-    private int upi;
+    private String upi;
     private int balance;
 private String accNum;
 private TransactionHistory ts;
 
-    public AccountNumber(String accNum,int bal,int upi)
+    public AccountNumber(String accNum,int bal,String upi)
     {
         this.accNum=accNum;
         this.balance=bal;
         this.upi=upi;
     }
 
+    List<TransactionHistory> mny=new ArrayList<>();
+    //Map<String,List> map=new HashMap<>();
 
 
-
-    public int getUpi() {
+    public String getUpi() {
         return upi;
     }
 
-    public void setUpi(int upi) {
+    public void setUpi(String upi) {
         this.upi = upi;
     }
 
